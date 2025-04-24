@@ -10,24 +10,25 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 */
 // eslint-disable-next-line no-unused-vars
 
-function generateNumber () {
+function check() {
+  // input
+const userAge =  parseInt(document.getElementById("user-age").value)
 
- // input
-const optionPositive = document.getElementById('option-positive').checked
-
- // process
-if (optionPositive === true) {
-
-   // output
-document.getElementById('answer').innerHTML =
-'Your random number is: ' + randomNumber
+  // process
+if (userAge >= 17) {
+  // output
+  document.getElementById("result").innerHTML =
+    "You can see an R rated movie alone!"
+} else if (userAge >= 13) {
+  //output
+  document.getElementById("result"). innerHTML =
+    "You can see a PG-13 rated movie alone!"
+} else if (userAge >= 5) {
+  //output
+  document.getElementById("result"). innerHTML =
+    "You can see a G or PG rated movie alone!"
 } else {
-
-   // process
-   const randomNegativeNumber = randomNumber * -1
-   // output
-document.getElementById('answer').innerHTML =
-'Your random number is: ' + randomNegativeNumber
+  document.getElementById("result"). innerHTML =
+    "Uh. You're too young for most things.!"
 }
-
 }
