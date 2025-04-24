@@ -4,9 +4,8 @@
 
 // Created on: Apr 2025
 // This file contains the JS functions for index.html
-const randomNumber = Math.floor(Math.random() * 6) + 1
 /**
-* This function generates random positive or negative number
+* This function will tell you if you can watch the movie you want
 */
 // eslint-disable-next-line no-unused-vars
 
